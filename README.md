@@ -14,8 +14,7 @@ $ELBO = \sum\limits_{i=1}^{N}$
 $(\mathbb{E}$ 
 $_{z$ 
 $\sim$ 
-$q_\phi(z$ 
-$| x_i)}$ 
+$q_\phi(z|x_i)}$ 
 $[\log p_\theta(x_i | z)]+ \mathbb{KL}[q_\phi(z|x_i) || \mathcal{N}(0, I)])$
 
 This is the objective that we use for optimizing VAEs, where different flavours of VAE can be obtained by changing either the approximate posterior $q_\phi$, the conditional likelihood distribution $p_\theta$ or even the standard normal prior.
