@@ -11,8 +11,7 @@ Given $\mu_\theta(\cdot)$ and $\Sigma_\theta(\cdot)$ are parameterized as arbitr
 One way of optimizing for log-likelihood is to use the variational distribution $q_\phi(z | x)$, which with a little bit of algebra leads to the ELBO, which is:
 
 $ELBO = \sum\limits_{i=1}^{N}$ 
-$(\mathbb{E}$ 
-$_{z$ 
+$(\mathbb{E}_{z$ 
 $\sim$ 
 $q_\phi(z|x_i)}$ 
 $[\log p_\theta(x_i | z)]+ \mathbb{KL}[q_\phi(z|x_i) || \mathcal{N}(0, I)])$
