@@ -12,9 +12,9 @@ One way of optimizing for log-likelihood is to use the variational distribution 
 
 $ELBO = \sum\limits_{i=1}^{N}$ 
 $(\mathbb{E}$ 
-$_{z $ 
-$\sim $ 
-$q_\phi(z $ 
+$_{z$ 
+$\sim$ 
+$q_\phi(z$ 
 $| x_i)}$ 
 $[\log p_\theta(x_i | z)]+ \mathbb{KL}[q_\phi(z|x_i) || \mathcal{N}(0, I)])$
 
