@@ -10,7 +10,7 @@ Given $\mu_\theta(\cdot)$ and $\Sigma_\theta(\cdot)$ are parameterized as arbitr
 
 One way of optimizing for log-likelihood is to use the variational distribution $q_\phi(z | x)$, which with a little bit of algebra leads to the ELBO, which is:
 
-![equation](https://latex.codecogs.com/svg.latex?%5Ctext%7BELBO%7D%3D%5Csum%5Climits_%7Bi%3D1%7D%5EN%5Cleft%28%5Cmathbb%7BE%7D_%7Bz%5Csim%20q_%5Cphi%28z%7Cx_i%29%7D%5B%5Clog%20p_%5Ctheta%28x_i%20%7C%20z%29%5D%2B%5Cmathbb%7BKL%7D%5Bq_%5Cphi%28z%7Cx_i%29%7C%7C%5Cmathcal%7BN%7D%280%2C%20I%29%5D%5Cright%29)
+![equation](https://latex.codecogs.com/png.latex?\text{ELBO}=\sum\limits_{i=1}^N\left(\mathbb{E}_{z\sim q_\phi(z|x_i)}[\log p_\theta(x_i | z)]+\mathbb{KL}[q_\phi(z|x_i)||\mathcal{N}(0,I)]\right))
 
 This is the objective that we use for optimizing VAEs, where different flavours of VAE can be obtained by changing either the approximate posterior $q_\phi$, the conditional likelihood distribution $p_\theta$ or even the standard normal prior.
 
