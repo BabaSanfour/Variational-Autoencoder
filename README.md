@@ -2,7 +2,7 @@
 
 Variational Autoencoders are generative latent-variable models that are popularly used for unsupervised learning and are aimed at maximizing the log-likelihood of the data, that is, maximizing $\sum\limits_{i=1}^N \log p(x_i; \theta)$ where $N$ is the number of data samples available. The generative story is as follows:
 
-- $z &\sim \mathcal{N}(0, I)$ $\sum\limits_{i=1}^N \log p(x_i; \theta)$
+- $z &\sim \mathcal{N}(0, I)$
 
 - $x | z &\sim \mathcal{N}(\mu_\theta(z), \Sigma_\theta(z))$
 
